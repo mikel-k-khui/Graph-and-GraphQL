@@ -74,7 +74,7 @@ determine the path to walk through all 8 bridges that connects 2 shores and 2 is
 Euler proved there is no solution to the seven bridges problem.  Futhermore, his proof laid the foundation for Graph theory! His proof is called the Euler’s rule. You can learn more about his solution here.
 ![Euler's rule](https://cdn-media-1.freecodecamp.org/images/1*RPIPDVcZbWM0hy519YoZIA.png)
 
-As a thought exercise, imagine the simplest Euler's model uses 2 shores with n-th bridges. Each time there is an even number of bridges, you can return to the same shore. When you extrapolate this to n-th number of islands (or nodes), you find there is a limitation on the number of islands with odd number of bridges (or edges). To solve “**seven bridges of Königsberg**” problem requires the additional of one (1) bridge (or an edge). As an edge, by defintion, connects two nodes, this means only 2 shores (or nodes) can have odd number of bridges connecting it. While this rule solves for Euler's scenario, it is also scalable to n-th dimensions as 
+As a thought exercise, imagine the simplest Euler's model uses 2 shores with n-th bridges. Each time there is an even number of bridges, you can return to the same shore. When you extrapolate this to n-th number of islands (or nodes), you find there is a limitation on the number of islands with odd number of bridges (or edges). To solve “**seven bridges of Königsberg**” problem requires the additional of one (1) bridge (or an edge). As an edge, by defintion, connects two nodes, this means only 2 shores (or nodes) can have odd number of bridges connecting it.
 
 ![Euler's rule solution](https://cdn-media-1.freecodecamp.org/images/1*0tIgvHoB7uGpedZx1ZnLug.png)
 

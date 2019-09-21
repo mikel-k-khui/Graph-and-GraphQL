@@ -1,18 +1,18 @@
 # Graph 
 *Estimated read time is 6 minutes using assumption of 165 word-per-minute*
 
-Continuing the theme from previous article on “**Stack**”, another popular word in technology today is “**Graph**”.  For the most part, graph is an harmless word referencing pictures in statistics when you plot a function onto the coordinates’ plane. It can also be humourous at times Here is a funny graph video to [start][a].
+Continuing the theme from previous article on “**Stack**”, another popular and often confused word in technology today is “**Graph**”.  For the most part, graph is a harmless word referring to pictures in statistics when you plot a function onto the coordinates’ plane. It can also be humourous at times - here is the funny movie [intro][a].
 
-"**Graph's**" meaning depends on the branch of mathematics being discussed and eac has  deep implications from medicine to operation research. This article will summarize the concept of graph in computational science and software with relevant applications. 
+"**Graph's**" meaning depends on the branch of mathematics being discussed and each has  deep implications from medicine to operation research. This article will focus on graph in computational science and software with relevant applications. 
 
 ## What is Graph?
 
-Graph within the mathematics generally means two things:
+Graph within the mathematical world generally has two meanings:
 
-* The visual representation of a function[<sup>1</sup>][1] or the basic lessons from your trigonometry class
-* Graph theory in discrete mathematics[<sup>2</sup>][2] models relations between two objects.
+* The visual representation of a function[<sup>1</sup>][1] or the basic lessons from your trigonometry class; or
+* Graph theory in discrete mathematics[<sup>2</sup>][2] to model relations between two objects.
 
-There is entire software industry related to optimization and efficiency in generating or plotting visual representation in scientific research and data analytics[<sup>3</sup>][3]. For scope of this article, I will focus on graph theory and its application in computational science. software and database. I will briefly touch on visual presentation in relations to data analytics but not directly speak to plotting.
+There is an entire software industry related to optimization and efficiency in generating or plotting visual representation in scientific research and data analytics[<sup>3</sup>][3]. For scope of this article, I will focus solely on graph theory and its application in computational science and software.
 
 "**Graph**" is an *abstract data type* defined by two features:
 ```
@@ -24,29 +24,29 @@ An edge describes the relationship and/or connection between two nodes.
 
 ***That is all!***
 
-Simplicity is the power of graph theory – the designer has flexibility to add new characteristics and/or rules as needed.
+Simplicity is the power of graph theory – the designer can add new characteristics and/or rules as needed.
 
 The simplest graph is a **null graph** - essnetially a node with no edges - as illustrated in the first visual example below. As you add more nodes and edges, interesting patterns emerge. See below visual example of graph theory with three nodes:
 
 ![Basic Graph examples](https://www.tutorialspoint.com/graph_theory/images/eight_graphs.jpg)
 
-Some of the common characteristics applied to graph is:
+Some of the common characteristics applied to graph includes:
 
-1. **Labels** are information describing the nodes and edges itself (e.g. a, b, c, or station names);
-2. **Weights** is a quantitative measure to edges instead of qualitative relations or descriptive words; and
-3. **Features** (or attributes) denotes hold additional secondary information about nodes and edges themselves.
+1. **Labels** describes the nodes and edges themselves (e.g. a, b, c, or station names);
+2. **Weights** is an optional, quantitative measure to edges instead of qualitative relations or descriptive words (e.g. ```:Friend```); and
+3. **Features** (or attributes) denotes hold additional secondary information about nodes and edges themselves (e.g. ```:costs```).
 
 Below is a shortlist of common rules applied to graph design:
 
 1.  Directionality set rules on edges between two nodes where the connection applies only one-way
-2.  Unique labels restrict the information within each node and edge to be unique
+2.  Unique labels restrict the information of each node and edge to be different
 3.  Loops allows an edge to connect with itself
-4.  Heterogeneous nodes allow different types of nodes to connect with different edges
+4.  Heterogeneous nodes allow different types of nodes to connect by different edges
 5.  Dynamic graphs allow nodes and edges to be created, deleted, moved, and/or labels and features changed.
 
-As you see by 5th example in the visual above, the “**Tree**” *abstract data type* is essentially a special case of **Graph** – it is a collection of nodes with unidirectional edges.
+As you see by 5th example in the visual example above, the “**Tree**” *abstract data type* is essentially a special case of **Graph** – it is a collection of nodes with undirectioned edges.
 
-As a graph grows, it becomes difficult to analyze visually. As such, graphs are often depicted two-dimensionally in a tabular format as an **Adjacency List**.  An adjacency list includes:
+As a graph grows, it becomes difficult to analyze visually. As such, graphs are often depicted two-dimensionally in a tabular format - known as an **Adjacency List**.  An adjacency list includes:
 ```
 all nodes in the first column; and
 ```
@@ -71,10 +71,10 @@ determine the path to walk through all 8 bridges that connects 2 shores and 2 is
 
 ![Seven bridges of Königsberg problem](https://upload.wikimedia.org/wikipedia/commons/5/5d/Konigsberg_bridges.png)
 
-Euler proved there is no solution to the seven bridges problem.  Futhermore, his proof laid the foundation for Graph theory! His proof is called the Euler’s rule. and you can learn more about his solution here.
+Euler proved there is no solution to the seven bridges problem.  Futhermore, his proof laid the foundation for Graph theory! His proof is called the Euler’s rule. You can learn more about his solution here.
 ![Euler's rule](https://cdn-media-1.freecodecamp.org/images/1*RPIPDVcZbWM0hy519YoZIA.png)
 
-As a thought exercise, the simplest Euler's model uses 2 shores with n-th bridges. Each time there is an even number of bridges, you can return to the same shore. When you extrapolate this to n-th number of islands (or nodes), you find there is a limitation on the number of islands with odd number of bridges (or edges). To solve “**seven bridges of Königsberg**” problem will require the additional of one (1) bridge (or edge).  As the an edge connects two nodes, only 2 shores (or nodes) can have odd number of bridges (or edges) connecting it.
+As a thought exercise, imagine the simplest Euler's model uses 2 shores with n-th bridges. Each time there is an even number of bridges, you can return to the same shore. When you extrapolate this to n-th number of islands (or nodes), you find there is a limitation on the number of islands with odd number of bridges (or edges). To solve “**seven bridges of Königsberg**” problem requires the additional of one (1) bridge (or an edge). As an edge, by defintion, connects two nodes, this means only 2 shores (or nodes) can have odd number of bridges connecting it. While this rule solves for Euler's scenario, it is also scalable to n-th dimensions as 
 
 ![Euler's rule solution](https://cdn-media-1.freecodecamp.org/images/1*0tIgvHoB7uGpedZx1ZnLug.png)
 
